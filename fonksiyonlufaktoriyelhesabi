@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ int fak(int sayi) {
+ 
+ 	int fact = 1;
+ 	
+ 	for (; sayi>0; sayi--) {
+ 	
+	 	fact*= sayi;
+	 }
+	 
+	 return fact;
+ }
+
+
+
+int main() {
+	int n;
+	printf("bir sayi gir de faktoriyelini alalim ustag: ");
+	scanf("%d", &n);
+	printf("fak: %d", fak(n));
+	
+
+	return 0;
+}
